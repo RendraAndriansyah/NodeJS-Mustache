@@ -15,8 +15,10 @@ test("Mustache section show", async () => {
 		.readFile("./templates/person.mustache")
 		.then((data) => data.toString());
 	const data = mustache.render(helloPerson, {
-		person: "Rendra",
+		person: {
+			name: "Rendra",
+		},
 	});
 	console.log(data);
-	expect(data).toContain("hello User");
+	expect(data).toContain("hello User Rendra");
 });
