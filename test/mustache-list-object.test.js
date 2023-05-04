@@ -20,4 +20,8 @@ test("Mustache list object", async () => {
 	expect(data).toContain("Andriansyah");
 	expect(data).toContain("Evita");
 	expect(data).toContain("Sari");
+	expect(data).toContain("100");
+	expect(data).toContain("110");
+	expect(data).toContain("120");
+	expect(data).toContain("130");
 });
